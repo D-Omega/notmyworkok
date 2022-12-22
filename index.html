@@ -1,78 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-* {
-  box-sizing: border-box;
-}
+body {margin:0;}
 
-.menu {
-  float: left;
-  width: 20%;
-  text-align: center;
-}
-
-.menu a {
-  background-color: #ffffff;
-  padding: 8px;
-  margin-top: 7px;
-  display: block;
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
   width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
   color: black;
 }
 
 .main {
-  float: left;
-  width: 60%;
-  padding: 0 20px;
-}
-
-.right {
-  background-color: #ffffff;
-  float: left;
-  width: 20%;
-  padding: 15px;
-  margin-top: 7px;
-  text-align: center;
-}
-
-@media only screen and (max-width: 620px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width: 100%;
-  }
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
 }
 </style>
 </head>
-<body style="font-family:Verdana;color:#000000;">
+<body>
 
-<div style="background-color:#e5e5e5;padding:15px;text-align:center;">
-  <h1>EaglerCrack</h1>
-</div>
-
-<div style="overflow:auto">
-  <div class="menu">
-    <a href="./eaglerclient.html">EaglerCraft Clients</a>
+<div class="navbar">
+   <a href="./home.html">Home</a>
+      <a href="./eaglerclient.html">EaglerCraft Clients</a>
     <a href="./htmlgames.html">Games</a>
     <a href="./unlocker.html">Unblockers</a>
     <a href="./calculator.html">Calculator</a>
-  </div>
-
-  <div class="main">
-    <h2>Choose any button</h2>
-    <p>Click a button so you can start your very own EaglerCrack experience. EaglerCraft Client will bring you to eaglercraft clients. Games button will bring you to games. Unblockers will bring you to a list of unblockers that are unblocked.</p>
-  </div>
-
-  <div class="right">
-    <h2>Update Log</h2>
-    <p>Added: New Menu Hud
-      Working On: Adding Precision Client
-    </p>
-  </div>
 </div>
-<div style="font color=#FFFFFF"
-<div style="background-color:#000000;text-align:center;padding:10px;margin-top:7px;">© copyright eaglercrack.vercel.app</div>
+
+<div class="main">
+  <h1>Update Log</h1>
+  <h2>Added: New Menu</h2>
+  <h2>Removed: Nothing</h2>
+  <h2>Working On: New Menu</h2>
+
+</div>
+
 </body>
 </html>
-
